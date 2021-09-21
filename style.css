@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caramel&family=Gluten:wght@100&display=swap');
+*{
+    background-color: black;
+}
+.form-group{
+    color: #eee;
+}
+option{
+    font-family: cursive;
+    padding: 0.1px;
+}
+.header{
+    text-align: center;
+    padding-top: 4vh;
+}
+.header .titlee{
+    background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+}
+.header h1{
+    padding-bottom: 1vh;
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+}
+.slideshow{
+    width: 98%;
+    height: 80vh;
+    position: relative;
+}
+.slide{
+    position: absolute;
+    top: 2vh;
+    bottom: 2vh;
+    left: 2vw;
+    right: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0;
+    transform: scale(1);
+    transition : all 0.9s ease-out;
+}
+
+.slide:nth-last-child(2){
+    opacity:1 ;
+    transform: scale(1.05);
+}
+@media screen and (max-width: 400px)
+{
+    .header .titlee{
+        font-size: 29px;
+    }
+}
